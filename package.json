@@ -1,0 +1,57 @@
+{
+  "name": "@sazm/cwv",
+  "version": "1.0.0",
+  "description": "Ultra-lightweight Core Web Vitals (LCP, INP, CLS, FCP, TTFB) diagnostic & reporting toolkit by SazM.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "test": "node --test test/*.test.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "core-web-vitals",
+    "cwv",
+    "web-vitals",
+    "lcp",
+    "inp",
+    "cls",
+    "fcp",
+    "ttfb",
+    "performance",
+    "real-user-monitoring",
+    "rum",
+    "pagespeed",
+    "sazm"
+  ],
+  "author": "SazM <hello@sazm.in> (https://sazm.in)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sazmco/cwv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sazmco/cwv/issues"
+  },
+  "homepage": "https://sazm.in",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
