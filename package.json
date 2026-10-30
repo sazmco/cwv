@@ -1,6 +1,6 @@
 {
   "name": "@sazm/cwv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ultra-lightweight Core Web Vitals (LCP, INP, CLS, FCP, TTFB) diagnostic & reporting toolkit by SazM.",
   "type": "module",
   "main": "./dist/index.cjs",
